@@ -5,7 +5,8 @@ from kivy.uix.screenmanager import ScreenManager, Screen
 Builder.load_file('design.kv')
 
 class LoginScreen(Screen):
-    pass
+    def sign_up(self):
+        print("Sign Up Button Pressed")
 
 class RootWidget(ScreenManager):
     pass
