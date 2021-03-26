@@ -22,6 +22,10 @@ class SignUpScreen(Screen):
            json.dump(users, file)
        self.manager.current = "sign_up_screen_success"
 
+class SignUpScreenSuccess(Screen):
+    def login_page(self):
+        self.manager.current = "login_screen"
+
 class RootWidget(ScreenManager):
     pass
 
